@@ -3,73 +3,85 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Moments Paris - Indique e Ganhe</title>
+    <title>Moments Paris | Indique e Ganhe</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
 <header>
-    <h1>Moments Paris</h1>
-    <p>Indique, compartilhe e ganhe benefícios</p>
+    <h1>✨ Moments Paris ✨</h1>
+    <p>Programa Indique e Ganhe</p>
 </header>
 
+
+<main>
+
 <section class="card">
-    <h2>🎁 Programa Indique e Ganhe</h2>
+    <h2>🎁 Ganhe benefícios indicando</h2>
     <p>
-        Compartilhe Moments Paris com seus amigos e aumente seus ganhos.
+        Compartilhe a Moments Paris com seus amigos
+        ou indique novos consultores.
     </p>
 
-    <div class="buttons">
+    <button onclick="gerarCliente()">
+        🛍️ Indicar Cliente
+    </button>
 
-        <button onclick="gerarCliente()">
-            🛍️ Indicar Cliente
-        </button>
-
-        <button onclick="gerarConsultor()">
-            👥 Indicar Consultor
-        </button>
-
-    </div>
+    <button onclick="gerarConsultor()">
+        👥 Indicar Consultor
+    </button>
 </section>
 
 
 <section class="card">
+
     <h2>🔗 Seu link de indicação</h2>
 
-    <input id="link" readonly value="Seu link aparecerá aqui">
+    <input id="link" value="Clique em uma opção acima" readonly>
 
     <button onclick="copiarLink()">
-        📋 Copiar Link
+        📋 Copiar link
     </button>
 
-    <button onclick="whatsapp()">
-        📲 Compartilhar WhatsApp
+    <button onclick="compartilharWhatsApp()">
+        📲 WhatsApp
     </button>
 
 </section>
 
 
 <section class="card">
-    <h2>📷 QR Code</h2>
 
-    <div id="qrcode">
-        QR Code aparecerá aqui
-    </div>
+<h2>📷 QR Code</h2>
+
+<div id="qrcode">
+Seu QR Code aparecerá aqui
+</div>
+
+</section>
+
+
+<section class="card">
+
+<h2>📌 Regras</h2>
+
+<p>
+Indique clientes para conhecerem os perfumes Moments Paris.
+</p>
+
+<p>
+Indique novos consultores e faça parte da expansão da marca.
+</p>
 
 </section>
 
+</main>
 
-<section class="card regras">
 
-    <h2>📌 Regras da promoção</h2>
-
-    <p>
-        Indique novos clientes ou novos consultores Moments Paris
-        e participe dos benefícios.
-    </p>
-
-</section>
+<footer>
+<p>Moments Paris © 2026</p>
+</footer>
 
 
 <script src="script.js"></script>
