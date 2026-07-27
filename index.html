@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moments Paris - Indique e Ganhe</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+    <h1>Moments Paris</h1>
+    <p>Indique, compartilhe e ganhe benefícios</p>
+</header>
+
+<section class="card">
+    <h2>🎁 Programa Indique e Ganhe</h2>
+    <p>
+        Compartilhe Moments Paris com seus amigos e aumente seus ganhos.
+    </p>
+
+    <div class="buttons">
+
+        <button onclick="gerarCliente()">
+            🛍️ Indicar Cliente
+        </button>
+
+        <button onclick="gerarConsultor()">
+            👥 Indicar Consultor
+        </button>
+
+    </div>
+</section>
+
+
+<section class="card">
+    <h2>🔗 Seu link de indicação</h2>
+
+    <input id="link" readonly value="Seu link aparecerá aqui">
+
+    <button onclick="copiarLink()">
+        📋 Copiar Link
+    </button>
+
+    <button onclick="whatsapp()">
+        📲 Compartilhar WhatsApp
+    </button>
+
+</section>
+
+
+<section class="card">
+    <h2>📷 QR Code</h2>
+
+    <div id="qrcode">
+        QR Code aparecerá aqui
+    </div>
+
+</section>
+
+
+<section class="card regras">
+
+    <h2>📌 Regras da promoção</h2>
+
+    <p>
+        Indique novos clientes ou novos consultores Moments Paris
+        e participe dos benefícios.
+    </p>
+
+</section>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>

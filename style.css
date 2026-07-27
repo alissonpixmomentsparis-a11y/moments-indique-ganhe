@@ -1,0 +1,86 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #111, #3a001f);
+    min-height: 100vh;
+    color: white;
+    padding: 20px;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+header h1 {
+    font-size: 38px;
+    letter-spacing: 2px;
+}
+
+header p {
+    margin-top: 10px;
+    opacity: 0.8;
+}
+
+.card {
+    background: rgba(255,255,255,0.1);
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    padding: 25px;
+    margin-bottom: 20px;
+    text-align: center;
+    border: 1px solid rgba(255,255,255,0.2);
+}
+
+.card h2 {
+    margin-bottom: 15px;
+}
+
+.buttons {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+button {
+    background: #d4af37;
+    color: black;
+    border: none;
+    padding: 15px 20px;
+    border-radius: 30px;
+    font-size: 16px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+button:hover {
+    transform: scale(1.05);
+}
+
+input {
+    width: 100%;
+    padding: 15px;
+    border-radius: 15px;
+    border: none;
+    margin: 15px 0;
+    text-align: center;
+}
+
+#qrcode {
+    background:white;
+    color:black;
+    padding:30px;
+    border-radius:15px;
+    display:inline-block;
+}
+
+.regras {
+    font-size: 15px;
+    line-height: 1.5;
+}
