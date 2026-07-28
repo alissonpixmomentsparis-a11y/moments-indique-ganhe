@@ -294,8 +294,10 @@ button:hover{
 }
 
 #linkGerado{
-    border:1px solid var(--dourado);
+    border:2px solid var(--dourado);
+    border-radius:15px;
     background:var(--preto2);
     color:#fff;
+    box-shadow:0 0 10px rgba(212,175,55,.3);
 }
 
