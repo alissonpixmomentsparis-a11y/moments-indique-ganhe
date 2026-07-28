@@ -1,86 +1,304 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: Arial, sans-serif;
+:root{
+
+    --preto:#050505;
+    --preto2:#111111;
+    --dourado:#D4AF37;
+    --douradoClaro:#F4D06F;
+    --branco:#ffffff;
+    --cinza:#cfcfcf;
+
 }
 
-body {
-    background: linear-gradient(135deg, #111, #3a001f);
-    min-height: 100vh;
-    color: white;
-    padding: 20px;
+
+*{
+
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+
 }
 
-header {
-    text-align: center;
-    margin-bottom: 25px;
+
+body{
+
+    background:var(--preto);
+    color:var(--branco);
+    font-family:Arial, sans-serif;
+    line-height:1.6;
+
 }
 
-header h1 {
-    font-size: 38px;
-    letter-spacing: 2px;
+
+section{
+
+    width:100%;
+    padding:60px 20px;
+
 }
 
-header p {
-    margin-top: 10px;
-    opacity: 0.8;
+
+h2,h3{
+
+    color:var(--dourado);
+    text-align:center;
+
 }
 
-.card {
-    background: rgba(255,255,255,0.1);
-    backdrop-filter: blur(10px);
-    border-radius: 20px;
-    padding: 25px;
-    margin-bottom: 20px;
-    text-align: center;
-    border: 1px solid rgba(255,255,255,0.2);
+
+p{
+
+    color:var(--cinza);
+    text-align:center;
+
 }
 
-.card h2 {
-    margin-bottom: 15px;
+
+/* TOPO */
+
+.topo{
+
+    padding:25px;
+    text-align:center;
+
 }
 
-.buttons {
-    display: flex;
-    gap: 15px;
-    justify-content: center;
-    flex-wrap: wrap;
+
+.logo img{
+
+    width:90px;
+    margin:auto;
+
 }
 
-button {
-    background: #d4af37;
-    color: black;
-    border: none;
-    padding: 15px 20px;
-    border-radius: 30px;
-    font-size: 16px;
-    cursor: pointer;
-    font-weight: bold;
+
+/* ÁREA DE INDICAÇÃO */
+
+.indicacao{
+
+    min-height:100vh;
+
 }
 
-button:hover {
-    transform: scale(1.05);
+
+.indicacao h2{
+
+    font-size:32px;
+    margin-bottom:15px;
+
 }
 
-input {
-    width: 100%;
-    padding: 15px;
-    border-radius: 15px;
-    border: none;
-    margin: 15px 0;
-    text-align: center;
+
+.indicacao > p{
+
+    max-width:600px;
+    margin:0 auto 30px;
+
 }
 
-#qrcode {
-    background:white;
-    color:black;
+
+/* GERADOR */
+
+.gerador{
+
+    max-width:500px;
+    margin:30px auto;
     padding:30px;
-    border-radius:15px;
-    display:inline-block;
+
+    background:var(--preto2);
+
+    border:1px solid var(--dourado);
+
+    border-radius:25px;
+
+    box-shadow:0 0 25px rgba(212,175,55,.15);
+
 }
 
-.regras {
-    font-size: 15px;
-    line-height: 1.5;
+
+label{
+
+    display:block;
+    color:white;
+    margin-bottom:10px;
+
+}
+
+
+input{
+
+    width:100%;
+
+    padding:15px;
+
+    border-radius:15px;
+
+    border:none;
+
+    font-size:16px;
+
+    margin-bottom:20px;
+
+}
+
+
+/* BOTÕES */
+
+button{
+
+    width:100%;
+
+    padding:15px;
+
+    margin:8px 0;
+
+    border:none;
+
+    border-radius:30px;
+
+    background:var(--dourado);
+
+    color:#000;
+
+    font-weight:bold;
+
+    font-size:16px;
+
+}
+
+
+button:hover{
+
+    background:var(--douradoClaro);
+
+}
+
+
+/* LINK GERADO */
+
+#linkGerado{
+
+    margin-top:20px;
+
+    padding:15px;
+
+    background:#000;
+
+    border-radius:15px;
+
+    word-break:break-word;
+
+    border:1px solid #333;
+
+}
+
+
+/* PROMOÇÃO */
+
+.promocao{
+
+    max-width:650px;
+
+    margin:40px auto;
+
+    padding:35px;
+
+    background:linear-gradient(
+        145deg,
+        #111,
+        #050505
+    );
+
+    border:2px solid var(--dourado);
+
+    border-radius:25px;
+
+}
+
+
+.promocao h2{
+
+    font-size:26px;
+
+    margin-bottom:20px;
+
+}
+
+
+.promocao h3{
+
+    margin-top:25px;
+
+}
+
+
+.promocao p{
+
+    margin:12px 0;
+
+}
+
+
+/* COMO FUNCIONA */
+
+.como-funciona{
+
+    max-width:650px;
+
+    margin:auto;
+
+}
+
+
+.passos{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:15px;
+
+}
+
+
+.passos div{
+
+    background:#111;
+
+    padding:20px;
+
+    border-radius:20px;
+
+    border:1px solid #333;
+
+}
+
+
+.passos strong{
+
+    display:block;
+
+    color:var(--dourado);
+
+    font-size:25px;
+
+}
+
+
+/* MOBILE */
+
+@media(max-width:600px){
+
+    .indicacao h2{
+
+        font-size:26px;
+
+    }
+
+
+    section{
+
+        padding:40px 15px;
+
+    }
+
 }

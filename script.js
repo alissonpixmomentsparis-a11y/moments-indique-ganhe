@@ -1,42 +1,127 @@
-function gerarCliente() {
+const meuWhatsApp = "5519987195282";
 
-    let link = "https://alissonpixmomentsparis-a11y.github.io/moments-indique-ganhe/?tipo=cliente";
+let linkAtual = "";
 
-    document.getElementById("link").value = link;
+
+// ROLAR ATÉ O GERADOR
+
+function rolarIndicacao(){
+
+    document
+    .getElementById("indicacao")
+    .scrollIntoView({
+        behavior:"smooth"
+    });
 
 }
 
 
-function gerarConsultor() {
 
-    let link = "https://alissonpixmomentsparis-a11y.github.io/moments-indique-ganhe/?tipo=consultor";
+// GERAR LINK DE COMPRA
 
-    document.getElementById("link").value = link;
+function gerarLinkCompra(){
+
+    const nome = document
+    .getElementById("nomeIndicador")
+    .value
+    .trim();
+
+
+    if(nome === ""){
+        alert("Digite seu nome primeiro");
+        return;
+    }
+
+
+    const mensagem =
+    `Olá! O ${nome} me indicou e quero comprar um perfume Moments Paris.`;
+
+
+    linkAtual =
+    `https://wa.me/${meuWhatsApp}?text=${encodeURIComponent(mensagem)}`;
+
+
+    document
+    .getElementById("linkGerado")
+    .value = linkAtual;
+
 
 }
 
 
-function copiarLink() {
 
-    let campo = document.getElementById("link");
 
-    campo.select();
 
-    navigator.clipboard.writeText(campo.value);
+
+// GERAR LINK DE CONSULTOR
+
+function gerarLinkConsultor(){
+
+    const nome = document
+    .getElementById("nomeIndicador")
+    .value
+    .trim();
+
+
+    if(nome === ""){
+        alert("Digite seu nome primeiro");
+        return;
+    }
+
+
+    const mensagem =
+    `Olá! O ${nome} me indicou e quero ser consultor Moments Paris.`;
+
+
+    linkAtual =
+    `https://wa.me/${meuWhatsApp}?text=${encodeURIComponent(mensagem)}`;
+
+
+    document
+    .getElementById("linkGerado")
+    .value = linkAtual;
+
+
+}
+
+
+
+
+
+
+// COPIAR LINK
+
+function copiarLink(){
+
+    if(linkAtual === ""){
+        alert("Gere seu link primeiro");
+        return;
+    }
+
+
+    navigator.clipboard.writeText(linkAtual);
+
 
     alert("Link copiado com sucesso!");
 
 }
 
 
-function whatsapp() {
 
-    let link = document.getElementById("link").value;
 
-    let mensagem = "Olá! Conheça a Moments Paris através do meu link: " + link;
 
-    let url = "https://wa.me/?text=" + encodeURIComponent(mensagem);
 
-    window.open(url, "_blank");
+
+// COMPARTILHAR NO WHATSAPP
+
+function compartilharWhatsApp(){
+
+    if(linkAtual === ""){
+        alert("Gere seu link primeiro");
+        return;
+    }
+
+
+    window.open(linkAtual, "_blank");
 
 }
