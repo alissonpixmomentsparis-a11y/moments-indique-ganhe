@@ -126,6 +126,7 @@ label{
 
 input{
 
+
     width:100%;
 
     padding:15px;
@@ -177,21 +178,6 @@ button:hover{
 
 /* LINK GERADO */
 
-#linkGerado{
-
-    margin-top:20px;
-
-    padding:15px;
-
-    background:#000;
-
-    border-radius:15px;
-
-    word-break:break-word;
-
-    border:1px solid #333;
-
-}
 
 
 /* PROMOÇÃO */
@@ -306,3 +292,10 @@ button:hover{
     }
 
 }
+
+#linkGerado{
+    border:1px solid var(--dourado);
+    background:var(--preto2);
+    color:#fff;
+}
+
