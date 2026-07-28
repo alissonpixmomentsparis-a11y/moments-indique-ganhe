@@ -1,3 +1,5 @@
+alert("SCRIPT CARREGOU");
+
 const meuWhatsApp = "5519987195282";
 
 let linkAtual = "";
