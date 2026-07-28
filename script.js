@@ -125,3 +125,8 @@ function compartilharWhatsApp(){
     window.open(linkAtual, "_blank");
 
 }
+
+setTimeout(function(){
+    document.querySelector(".tela-abertura").style.display="none";
+},3000);
+
