@@ -293,16 +293,11 @@ button:hover{
 
 }
 
-#linkGerado{
-    border:1px solid var(--dourado);
-    border-radius:15px;
-    background:var(--preto2);
-    color:#fff;
-}
 
 
 label,
 .resultado h3{
     color:var(--dourado);
+    font-weight:bold;
 }
 
