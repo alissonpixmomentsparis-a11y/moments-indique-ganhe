@@ -27,8 +27,8 @@ body{
     width:235px;
     height:38px;
 
-    background:rgba(255,0,0,.35);
-    border:2px solid #ff0000;
+    background:transparent;
+    border:none;
 
     border-radius:30px;
 }
