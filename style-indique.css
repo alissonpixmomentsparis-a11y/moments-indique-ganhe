@@ -1,0 +1,160 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    background:#000;
+    font-family:Arial,Helvetica,sans-serif;
+    overflow-x:hidden;
+}
+
+.tela-abertura{
+    position:fixed;
+    inset:0;
+    background:#000;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    z-index:9999;
+}
+
+.logo-abertura img{
+    width:180px;
+}
+
+.gerador-app{
+    position:relative;
+    width:100vw;
+    max-width:430px;
+    margin:0 auto;
+}
+
+.gerador-img{
+    width:100%;
+    height:auto;
+    display:block;
+}
+
+.campo-nome,
+.campo-link{
+    position:absolute;
+    left:50px;
+    width:300px;
+    height:38px;
+    border:none;
+    border-radius:12px;
+    padding:0 15px;
+    font-size:16px;
+    background:transparent;
+    color:#000;
+}
+
+.campo-nome{
+    top:42%;
+}
+
+.btn-compra,
+.btn-consultor,
+.btn-copiar,
+.btn-whatsapp{
+    position:absolute;
+    left:50px;
+    width:300px;
+    height:35px;
+    border:none;
+    background:transparent;
+    cursor:pointer;
+}
+
+.btn-compra{
+    top:292px;
+}
+
+.btn-consultor{
+    top:338px;
+}
+
+.campo-link{
+    top:403px;
+}
+
+.btn-copiar{
+    top:439px;
+}
+
+.btn-whatsapp{
+    top:475px;
+}
+
+.campo-nome{
+    left:13%;
+}
+
+.btn-compra,
+.btn-consultor,
+.btn-copiar,
+.btn-whatsapp{
+}
+
+.campo-link{
+    left:75px !important;
+    width:260px !important;
+    height:28px !important;
+}
+
+.btn-copiar,
+.btn-whatsapp{
+    height:25px !important;
+}
+
+.btn-copiar{
+    left:55px !important;
+    width:280px !important;
+}
+
+.btn-whatsapp{
+    left:55px !important;
+    width:280px !important;
+}
+
+.campo-nome,
+.btn-compra,
+.btn-consultor{
+    width:285px !important;
+}
+
+.btn-compra,
+.btn-consultor{
+    left:51px !important;
+}
+
+.btn-compra,
+.btn-consultor{
+    left:52px !important;
+}
+
+.campo-link{
+    left:76px !important;
+}
+
+.campo-nome,
+.campo-link{
+    color:#fff !important;
+    caret-color:#fff !important;
+}
+
+.campo-nome::placeholder,
+.campo-link::placeholder{
+    color:rgba(255,255,255,.75) !important;
+}
+
+.frase-final{
+    text-align:center;
+    color:#d4af37;
+    font-size:18px;
+    font-weight:600;
+    margin:25px 20px 35px;
+    line-height:1.5;
+}

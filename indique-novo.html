@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Indique e Ganhe | Moments Paris</title>
+
+<link rel="stylesheet" href="style-indique.css">
+
+</head>
+<body>
+
+<div class="tela-abertura">
+    <div class="logo-abertura">
+        <img src="logo.png" alt="Moments Paris">
+    </div>
+</div>
+
+<div class="gerador-app">
+
+    <img src="gerador.jpg" class="gerador-img" alt="Gerador">
+
+    <input
+        type="text"
+        id="nomeIndicador"
+        class="campo-nome"
+        placeholder="Digite seu nome">
+
+    <button
+        class="btn-compra"
+        onclick="gerarLinkCompra()">
+    </button>
+
+    <button
+        class="btn-consultor"
+        onclick="gerarLinkConsultor()">
+    </button>
+
+    <input
+        type="text"
+        id="linkGerado"
+        class="campo-link"
+        readonly
+        placeholder="">
+
+    <button
+        class="btn-copiar"
+        onclick="copiarLink()">
+    </button>
+
+    <button
+        class="btn-whatsapp"
+        onclick="compartilharWhatsApp()">
+    </button>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
+<p class="frase-final">
+✨ Compartilhe. Inspire. Ganhe recompensas com a Moments Paris.
+</p>
