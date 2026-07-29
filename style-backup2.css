@@ -1,0 +1,1199 @@
+///*==================================================
+ MOMENTS PARIS TATUÍ
+ STYLE.CSS
+==================================================*/
+
+/* Google Fonts:
+Cinzel
+Poppins
+*/
+
+:root{
+
+    --preto:#050505;
+    --preto2:#111111;
+    --preto3:#1b1b1b;
+
+    --dourado:#D4AF37;
+    --douradoClaro:#F4D06F;
+
+    --branco:#ffffff;
+    --cinza:#c7c7c7;
+
+    --sombra:0 0 30px rgba(212,175,55,.15);
+
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+
+    background:var(--preto);
+
+    color:var(--branco);
+
+    font-family:'Poppins',sans-serif;
+
+    overflow-x:hidden;
+
+    line-height:1.6;
+
+}
+
+img{
+
+    max-width:100%;
+
+    display:block;
+
+}
+
+a{
+
+    color:inherit;
+
+    text-decoration:none;
+
+}
+
+section{
+
+    width:100%;
+
+    padding:90px 8%;
+
+}
+
+.container{
+
+    width:100%;
+
+    max-width:1250px;
+
+    margin:auto;
+
+}
+
+h1,h2,h3{
+
+    font-family:'Cinzel',serif;
+
+    font-weight:700;
+
+    letter-spacing:1px;
+
+}
+
+h2{
+
+    color:var(--dourado);
+
+    margin-bottom:20px;
+
+    font-size:2.3rem;
+
+}
+
+p{
+
+    color:var(--cinza);
+
+    font-size:1rem;
+
+}
+
+::-webkit-scrollbar{
+
+    width:8px;
+
+}
+
+::-webkit-scrollbar-track{
+
+    background:#111;
+
+}
+
+::-webkit-scrollbar-thumb{
+
+    background:var(--dourado);
+
+    border-radius:30px;
+
+}
+
+
+/*==================================================
+ HEADER PREMIUM
+==================================================*/
+
+header{
+
+    width:100%;
+
+    position:fixed;
+
+    top:0;
+
+    left:0;
+
+    z-index:1000;
+
+    padding:25px 8%;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:space-between;
+
+    background:transparent;
+
+    transition:.4s ease;
+
+}
+
+
+/* Header quando rolar a página */
+
+header.scrolled{
+
+    background:rgba(5,5,5,.95);
+
+    backdrop-filter:blur(10px);
+
+    padding:18px 8%;
+
+    box-shadow:0 5px 25px rgba(0,0,0,.5);
+
+}
+
+
+/* LOGO */
+
+.logo{
+
+    font-family:'Cinzel',serif;
+
+    font-size:1.8rem;
+
+    color:var(--dourado);
+
+    letter-spacing:2px;
+
+    font-weight:bold;
+
+}
+
+
+/* MENU */
+
+nav ul{
+
+    display:flex;
+
+    gap:35px;
+
+    list-style:none;
+
+}
+
+
+nav ul li a{
+
+    font-size:.95rem;
+
+    color:var(--branco);
+
+    position:relative;
+
+    transition:.3s;
+
+}
+
+
+/* Linha dourada no menu */
+
+nav ul li a::after{
+
+    content:"";
+
+    position:absolute;
+
+    width:0;
+
+    height:2px;
+
+    background:var(--dourado);
+
+    left:0;
+
+    bottom:-8px;
+
+    transition:.3s;
+
+}
+
+
+nav ul li a:hover{
+
+    color:var(--dourado);
+
+}
+
+
+nav ul li a:hover::after{
+
+    width:100%;
+
+}
+
+
+/* BOTÃO DE CONTATO */
+
+.btn-header{
+
+    padding:12px 25px;
+
+    border:1px solid var(--dourado);
+
+    color:var(--dourado);
+
+    border-radius:30px;
+
+    transition:.3s;
+
+    font-weight:600;
+
+}
+
+
+.btn-header:hover{
+
+    background:var(--dourado);
+
+    color:#000;
+
+}
+
+
+/* MENU MOBILE */
+
+.menu-toggle{
+
+    display:none;
+
+    font-size:2rem;
+
+    color:var(--dourado);
+
+    cursor:pointer;
+
+}
+
+
+/* RESPONSIVO */
+
+@media(max-width:900px){
+
+    nav{
+
+        display:none;
+
+    }
+
+
+    .menu-toggle{
+
+        display:block;
+
+    }
+
+
+    .btn-header{
+
+        display:none;
+
+    }
+
+}
+
+/*==================================================
+ HERO - BANNER PRINCIPAL
+==================================================*/
+
+.hero{
+
+    min-height:100vh;
+
+    display:flex;
+
+    align-items:center;
+
+    position:relative;
+
+    background-size:cover;
+
+    background-position:center;
+
+    overflow:hidden;
+
+}
+
+
+/* Camada escura sobre a imagem */
+
+.hero::before{
+
+    content:"";
+
+    position:absolute;
+
+    inset:0;
+
+    background:linear-gradient(
+        90deg,
+        rgba(5,5,5,.95),
+        rgba(5,5,5,.45),
+        rgba(5,5,5,.8)
+    );
+
+}
+
+
+/* Conteúdo */
+
+.hero-content{
+
+    position:relative;
+
+    z-index:2;
+
+    max-width:700px;
+
+}
+
+
+.hero h1{
+
+    font-size:4rem;
+
+    color:var(--branco);
+
+    line-height:1.2;
+
+    margin-bottom:25px;
+
+}
+
+
+.hero h1 span{
+
+    color:var(--dourado);
+
+}
+
+
+.hero p{
+
+    font-size:1.2rem;
+
+    margin-bottom:35px;
+
+    max-width:600px;
+
+}
+
+
+/* Botão principal */
+
+.btn-primary{
+
+    display:inline-block;
+
+    padding:15px 35px;
+
+    background:var(--dourado);
+
+    color:#000;
+
+    border-radius:40px;
+
+    font-weight:700;
+
+    transition:.3s;
+
+}
+
+
+.btn-primary:hover{
+
+    background:var(--douradoClaro);
+
+    transform:translateY(-3px);
+
+}
+
+
+/* Responsivo */
+
+@media(max-width:900px){
+
+    .hero h1{
+
+        font-size:2.7rem;
+
+    }
+
+
+    .hero p{
+
+        font-size:1rem;
+
+    }
+
+}
+
+/*==================================================
+ PRODUTOS - LINHAS MOMENTS PARIS
+==================================================*/
+
+.produtos{
+
+    background:var(--preto);
+
+}
+
+
+/* Título da seção */
+
+.section-title{
+
+    text-align:center;
+
+    margin-bottom:50px;
+
+}
+
+
+.section-title h2{
+
+    margin-bottom:15px;
+
+}
+
+
+.section-title p{
+
+    max-width:650px;
+
+    margin:auto;
+
+}
+
+
+/* Grid dos produtos */
+
+.produtos-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:30px;
+
+}
+
+
+/* Card */
+
+.produto-card{
+
+    background:var(--preto2);
+
+    border:1px solid rgba(212,175,55,.15);
+
+    border-radius:20px;
+
+    overflow:hidden;
+
+    transition:.4s ease;
+
+    position:relative;
+
+}
+
+
+/* Efeito dourado */
+
+.produto-card::before{
+
+    content:"";
+
+    position:absolute;
+
+    inset:0;
+
+    border-radius:20px;
+
+    background:linear-gradient(
+        135deg,
+        transparent,
+        rgba(212,175,55,.15),
+        transparent
+    );
+
+    opacity:0;
+
+    transition:.4s;
+
+}
+
+
+/* Hover */
+
+.produto-card:hover{
+
+    transform:translateY(-10px);
+
+    box-shadow:var(--sombra);
+
+}
+
+
+.produto-card:hover::before{
+
+    opacity:1;
+
+}
+
+
+/* Imagem */
+
+.produto-card img{
+
+    width:100%;
+
+    height:320px;
+
+    object-fit:cover;
+
+}
+
+
+/* Conteúdo */
+
+.produto-info{
+
+    padding:25px;
+
+}
+
+
+.produto-info h3{
+
+    color:var(--dourado);
+
+    font-size:1.4
+
+/*==================================================
+ FOOTER MOMENTS PARIS
+==================================================*/
+
+footer{
+
+    background:var(--preto2);
+
+    padding:50px 8% 25px;
+
+    border-top:1px solid rgba(212,175,55,.15);
+
+}
+
+
+/* Conteúdo */
+
+.footer-content{
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:40px;
+
+    margin-bottom:40px;
+
+}
+
+
+/* Logo */
+
+.footer-logo{
+
+    font-family:'Cinzel',serif;
+
+    font-size:2rem;
+
+    color:var(--dourado);
+
+    letter-spacing:2px;
+
+    margin-bottom:15px;
+
+}
+
+
+/* Títulos */
+
+footer h3{
+
+    color:var(--dourado);
+
+    font-size:1.2rem;
+
+    margin-bottom:20px;
+
+}
+
+
+/* Links */
+
+.footer-links{
+
+    list-style:none;
+
+}
+
+
+.footer-links li{
+
+    margin-bottom:10px;
+
+}
+
+
+.footer-links a{
+
+    color:var(--cinza);
+
+    transition:.3s;
+
+}
+
+
+.footer-links a:hover{
+
+    color:var(--dourado);
+
+}
+
+
+/* Redes sociais */
+
+.social-links{
+
+    display:flex;
+
+    gap:15px;
+
+}
+
+
+.social-links a{
+
+    width:45px;
+
+    height:45px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    border-radius:50%;
+
+    border:1px solid var(--dourado);
+
+   
+
+/*==================================================
+ ANIMAÇÕES E ACABAMENTO FINAL
+==================================================*/
+
+
+/* Animação de entrada */
+
+.fade-up{
+
+    opacity:0;
+
+    transform:translateY(40px);
+
+    transition:1s ease;
+
+}
+
+
+.fade-up.active{
+
+    opacity:1;
+
+    transform:translateY(0);
+
+}
+
+
+
+/* Brilho dourado */
+
+.gold-effect{
+
+    position:relative;
+
+    overflow:hidden;
+
+}
+
+
+.gold-effect::after{
+
+    content:"";
+
+    position:absolute;
+
+    top:0;
+
+    left:-100%;
+
+    width:50%;
+
+    height:100%;
+
+    background:linear-gradient(
+        120deg,
+        transparent,
+        rgba(255,255,255,.3),
+        transparent
+    );
+
+    transition:.8s;
+
+}
+
+
+.gold-effect:hover::after{
+
+    left:150%;
+
+}
+
+
+
+/* Botão flutuante WhatsApp */
+
+.whatsapp-float{
+
+    position:fixed;
+
+    right:25px;
+
+    bottom:25px;
+
+    width:60px;
+
+    height:60px;
+
+    border-radius:50%;
+
+    background:var(--dourado);
+
+    color:#000;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    font-size:1.8rem;
+
+    z-index:999;
+
+    box-shadow:0 0 25px rgba(212,175,55,.4);
+
+    transition:.3s;
+
+}
+
+
+.whatsapp-float:hover{
+
+    transform:scale(1.1);
+
+}
+
+
+
+/* Ajustes gerais mobile */
+
+@media(max-width:600px){
+
+    section{
+
+        padding:70px 5%;
+
+    }
+
+
+    h2{
+
+        font-size:1.8rem;
+
+    }
+
+
+    .container{
+
+        width:100%;
+
+    }
+
+}
+
+
+/* Seleção de texto */
+
+::selection{
+
+    background:var(--dourado);
+
+    color:#000;
+
+}
+
+
+/*==================================================
+ AJUSTES GERADOR DE INDICAÇÃO
+ MOMENTS PARIS TATUÍ
+==================================================*/
+
+.topo{
+
+    width:100%;
+
+    padding:25px 8%;
+
+    position:absolute;
+
+    top:0;
+
+    z-index:10;
+
+}
+
+
+.logo{
+
+    font-family:'Cinzel',serif;
+
+    font-size:2rem;
+
+    color:var(--dourado);
+
+    letter-spacing:2px;
+
+}
+
+
+.logo span{
+
+    display:block;
+
+    font-size:.9rem;
+
+    color:var(--branco);
+
+    letter-spacing:4px;
+
+}
+
+
+
+/* Texto do banner */
+
+.hero-text{
+
+    position:relative;
+
+    z-index:2;
+
+    max-width:650px;
+
+}
+
+
+.hero-text h1{
+
+    font-size:3.8rem;
+
+    margin-bottom:20px;
+
+}
+
+
+.hero-text p{
+
+    font-size:1.2rem;
+
+    margin-bottom:35px;
+
+}
+
+
+/* Botões */
+
+button{
+
+    border:none;
+
+    cursor:pointer;
+
+    font-family:'Poppins',sans-serif;
+
+    transition:.3s;
+
+}
+
+
+.hero button{
+
+    padding:15px 35px;
+
+    background:var(--dourado);
+
+    color:#000;
+
+    border-radius:40px;
+
+    font-weight:700;
+
+}
+
+
+.hero button:hover{
+
+    background:var(--douradoClaro);
+
+    transform:translateY(-3px);
+
+}
+
+
+
+/* Produtos */
+
+.produtos{
+
+    text-align:center;
+
+}
+
+
+.produto{
+
+    background:var(--preto2);
+
+    border:1px solid rgba(212,175,55,.2);
+
+    border-radius:20px;
+
+    padding-bottom:20px;
+
+    overflow:hidden;
+
+    transition:.3s;
+
+}
+
+
+.produto:hover{
+
+    transform:translateY(-8px);
+
+    box-shadow:var(--sombra);
+
+}
+
+
+.produto img{
+
+    width:100%;
+
+    height:300px;
+
+    object-fit:cover;
+
+}
+
+
+.produto h3{
+
+}
+
+.logo img{
+
+    width:60px;
+
+    height:auto;
+
+}
+
+
+.promocao{
+
+    max-width:600px;
+
+    margin:40px auto;
+
+    padding:30px;
+
+    border-radius:20px;
+
+    text-align:center;
+
+    background:#111;
+
+    border:1px solid #d4af37;
+
+}
+
+
+.promocao h2{
+
+    color:#d4af37;
+
+    margin-bottom:20px;
+
+}
+
+
+.promocao h3{
+
+    margin-top:25px;
+
+    color:#d4af37;
+
+}
+
+
+.promocao p{
+
+    margin:12px 0;
+
+}
+
+
+/*==================================================
+ VISUAL PREMIUM - GERADOR MOMENTS PARIS
+==================================================*/
+
+.indicacao{
+
+    min-height:100vh;
+
+    padding:60px 20px;
+
+}
+
+
+.indicacao h2{
+
+    font-size:2.2rem;
+
+    text-align:center;
+
+    margin-bottom:15px;
+
+}
+
+
+.indicacao > p{
+
+    text-align:center;
+
+    max-width:600px;
+
+    margin:0 auto 30px;
+
+    font-size:1.1rem;
+
+}
+
+
+.gerador{
+
+    max-width:500px;
+
+    margin:30px auto;
+
+    padding:35px;
+
+    border-radius:25px;
+
+    background:rgba(255,255,255,0.08);
+
+    box-shadow:0 10px 30px rgba(0,0,0,.2);
+
+}
+
+
+.gerador label{
+
+    display:block;
+
+    margin-bottom:10px;
+
+    font-weight:600;
+
+}
+
+
+.gerador input{
+
+    border-radius:15px;
+
+    padding:16px;
+
+}
+
+
+.botoes-gerador button{
+
+    margin-top:15px;
+
+    font-size:1rem;
+
+}
+
+
+.promocao{
+
+    margin-top:40px;
+
+    box-shadow:0 10px 30px rgba(0,0,0,.2);
+
+}
+
+
+.indicacao{
+    background:red !important;
+}

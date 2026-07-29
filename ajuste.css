@@ -1,0 +1,27 @@
+.botao{
+    position:absolute;
+    left:9%;
+    width:82%;
+    height:8%;
+    background:transparent;
+}
+
+.mapa{
+    top:41%;
+}
+
+.indique{
+    top:50%;
+}
+
+.instagram{
+    top:59%;
+}
+
+.whatsapp{
+    top:68%;
+}
+
+.pedido{
+    top:77%;
+}
